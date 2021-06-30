@@ -2,7 +2,7 @@
 $logIn = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    include 'partials/_dbconnect.php';
+    include '_dbconnect.php';
     $username = $_POST["username"];
     $password = $_POST["password"];
     $exists=false;
@@ -46,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>LogIn</title>
   </head>
   <body>
-    <?php require 'partials/_nav.php' ?>
+    <?php require '_nav.php' ?>
     <?php
     if($logIn){
     echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
