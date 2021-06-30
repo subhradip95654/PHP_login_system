@@ -2,7 +2,7 @@
 $showAlert = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    include 'partials/_dbconnect.php';
+    include '_dbconnect.php';
     $username = $_POST["username"];
     $password = $_POST["password"];
     $cpassword = $_POST["cpassword"];
@@ -47,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>SignUp</title>
   </head>
   <body>
-    <?php require 'partials/_nav.php' ?>
+    <?php require '_nav.php' ?>
     <?php
     if($showAlert){
     echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
