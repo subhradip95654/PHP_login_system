@@ -20,7 +20,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
     <title>Welcome - <?php $_SESSION['username']?></title>
   </head>
   <body>
-    <?php require 'partials/_nav.php' ?>
+    <?php require '_nav.php' ?>
     
     <div class="container my-3">
     <div class="alert alert-success" role="alert">
